@@ -1,0 +1,204 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="cssCv.css" />
+    <script>
+        //Script 'showPos' based on: https://web.cortland.edu/flteach/mm-course/glossPopupDiv.html
+        function showPos(event, text) {
+            var el, x, y;
+
+            el = document.getElementById('PopUp');
+            if (window.event) {
+                x = window.event.clientX + document.documentElement.scrollLeft + document.body.scrollLeft;
+                y = window.event.clientY + document.documentElement.scrollTop + document.body.scrollTop;
+            }
+            else {
+                x = event.clientX + window.scrollX;
+                y = event.clientY + window.scrollY;
+            }
+            x -= 2; y -= 2;
+            y = y + 15
+            el.style.left = x + "px";
+            el.style.top = y + "px";
+            el.style.display = "block";
+            document.getElementById('PopUpText').innerHTML = text;
+        }
+        function stopshowPos(event) {
+            var el;
+            el = document.getElementById('PopUp');
+            el.style.display = "none";
+        }
+    </script>
+</head>
+<body>
+    <div class="social">
+        <div id='PopUp' class="popup">
+            <span id='PopUpText'>TEXT</span>
+        </div>
+        <ul>
+            Contact:
+            <li>
+                <a href="https://github.com/Sttauf">
+                    <img class="icon" src="https://img.icons8.com/bubbles/100/000000/github.png" onmouseover="showPos(event, 'Click to open the link');"  onmouseout="stopshowPos(event);">
+                </a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/sarah-tavares-taufner-297423180/" onmouseover="showPos(event, 'Click to open the link');"  onmouseout="stopshowPos(event);">
+                    <img class="icon" src="https://img.icons8.com/plasticine/100/000000/linkedin.png">
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(null)" onmouseover="showPos(event, 'Skype name: resaquel');"  onmouseout="stopshowPos(event);">
+                    <img class="icon" src="https://img.icons8.com/plasticine/100/000000/skype.png">
+                </a>
+            </li>
+            <li>
+
+                <a href="javascript:void(null)" onmouseover="showPos(event, 'sttauf@yahoo.com.br');" onmouseout="stopshowPos(event);">
+                    <img class="icon" src="https://img.icons8.com/plasticine/100/000000/email.png">
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(null)" onmouseover="showPos(event, '+1 (438) 503-4438');" onmouseout="stopshowPos(event);">
+                    <img class="icon" src="https://img.icons8.com/plasticine/100/000000/whatsapp.png">
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(null)" onmouseover="showPos(event, 'sttauf#5423');"  onmouseout="stopshowPos(event);">
+                    <img class="icon" src="https://img.icons8.com/plasticine/100/000000/discord-logo.png">
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="container">
+        <nav>
+            <h2><b>Skills</b></h2>
+            <ul>
+                <li class="skills">
+                    <ul>
+                        <li>
+                            <b>Industry Knowledge:</b>
+                            <ul>
+                                <li>Agile & Waterfall methods</li>
+                                <li>Scrum</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <b>Software:</b>
+                            <ul>
+                                <li>Microsoft Office </li>
+                                <li>GitKraken</li>
+                                <li>GitHub</li>
+                                <li>Eclipse</li>
+                                <li>VisualStudio</li>
+                                <li>VirtualBox</li>
+                                <li>FORAN</li>
+                                <li>Trello</li>
+                                <li>Unreal Engine</li>
+                                <li>Unity Engine</li>
+                                <li>AutoCAD 3D</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <b>Operating Systems: </b>
+                            <ul>
+                                <li>Windows</li>
+                                <li>Ubuntu</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <b>Languages:</b>
+                            <ul>
+                                <li>Brazilian Portuguese (advanced/native)</li>
+                                <li>English (advanced)</li>
+                                <li>French (intermediate)</li>
+                                <li>Spanish (basic)</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <b>Programming Languages:</b>
+                            <ul>
+                                <li>C#</li>
+                                <li>JavaScript</li>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>C++</li>
+                                <li>SQL</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <b>Personal Skills:</b>
+                            <ul>
+                                <li>Responsibility</li>
+                                <li>Adaptability</li>
+                                <li>Self-motivation</li>
+                                <li>Teamwork</li>
+                                <li>creativity</li>
+                            </ul>
+                        </li>
+                    </ul>
+            </ul>
+        </nav>
+    </div>
+    <div class="container">
+        <h2><b>Work Experience</b></h2>
+        <ul>
+            <li>
+                Work:
+                <ul>
+                    <li>Evolution (laundry): Operator, 873 Ave. Harvard, Laval, QC, H7W 3P8. From December 2018 to September 2019.</li>
+                </ul>
+            </li>
+            <li>
+                Volunteer:
+                <ul>
+                    <li> TechWeek 2019 - College LaSalle: Volunteer, November 13-19th, 2019.</li>
+                    <li>INT Innovators in Technology - College LaSalle: Member, since November 2019.</li>
+                    <li>City of Westmount: Children recreation, Family Day, May 26th, 2018.</li>
+                    <li>Evangel Pentecostal Church Montreal: Cashier and Servant (cleaning and serving), church’s Cafeteria, from October 2018 to December 2018.</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div class="container">
+        <h2><b>Education</b></h2>
+        <ul>
+            <li>Since January 2018, College LaSalle, Montreal – Computer Science Technology - Video Game Programming (DEC).</li>
+            <li>Since April 2018 - Programme d’intégration linguistique  – Francisation - Ministère de l'Immigration, de la Diversité et de l'Inclusion.</li>
+            <li>From August 2012 to December 2013 – Electronics Technician – Vocational Diploma (DEP) – Brazilian Navy Technical School- Rio de Janeiro (Brazil).</li>
+        </ul>
+    </div>
+    <div class="container">
+        <h2><b>References</b></h2>
+        <ul>
+            <li>Marília Santos Pomponet Moura, 514-431-4393.</li>
+            <li>Ana Luisa Figueiredo Carenzi, 438-935-6444.</li>
+        </ul>
+    </div>
+    <footer></footer>
+</body>
+</html>
+
+<!--
+Icons:
+    CV:
+    
+
+    <img src="https://img.icons8.com/plasticine/100/000000/hand-with-pen.png">
+
+
+
+
+    <img src="https://img.icons8.com/plasticine/100/000000/instagram.png">
+-->

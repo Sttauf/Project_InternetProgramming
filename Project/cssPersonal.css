@@ -1,0 +1,198 @@
+body {
+    background-image: url("img/d29b0ddae7e419d482f4f32db1c3d292.jpg");
+    background-color: black;
+    height: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    font-family: "Century Gothic";
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+    background-color: rgba(00, 00, 00, 0.5);
+    border-radius: 5px;
+    margin-top: 50px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+div {
+    color: white;
+}
+
+h2 {
+    border-bottom: 2px solid #333333;
+    margin-top: 30px;
+    text-align: center;
+    font-size: 40px;
+}
+p {
+    font-family: 'Century Gothic';
+    font-size: 24px;
+}
+#pics1 {
+    float: right;
+    margin: 0 45px 10px 10px;
+    width: 30%;
+ }
+#pics2 {
+    float: left;
+    margin: 0 45px 0px 0px;
+    padding-left: 60px;
+    width: 30%;
+}
+img {
+    width: 80%;
+}
+/*--------------------------------------------------------------------------*/
+* {
+    box-sizing: border-box
+}
+
+body {
+    font-family: 'Century Gothic', sans-serif;
+    margin: 0
+}
+
+.mySlides {
+    display: none
+}
+
+img {
+    vertical-align: middle;
+}
+
+figure {
+    text-align: center;
+    padding: 1px;
+    margin: 1px;
+}
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+
+}
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+p {
+    font-family: 'Century Gothic';
+    padding-left: 80px;
+    padding-right: 80px;
+}
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+    .prev:hover, .next:hover {
+        background-color: rgba(0,0,0,0.8);
+    }
+.text {
+    font-family: 'Century Gothic';
+    color: #f2f2f2;
+    font-size: 7px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+.dot {
+    cursor: pointer;
+    height: 10px;
+    width: 10px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.active, .dot:hover {
+    background-color: #717171;
+}
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+@media only screen and (max-width: 300px) {
+    .prev, .next, .text {
+        font-size: 11px
+    }
+}
+@media (max-width : 30px) {
+    .container {
+        width: 96%
+    }
+}
+@media (min-width: 900px) {
+    .container {
+        width: 1200px;
+    }
+    p {
+        font-size: 24px;
+    }
+}
+@media only screen and (max-width: 420px) {
+    .container {
+        width: 400px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width : 800px) {
+    .container {
+        width: 600px;
+    }
+
+    p {
+        font-size: 20px;
+    }
+}

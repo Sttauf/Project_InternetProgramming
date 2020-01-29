@@ -1,0 +1,120 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="cssPersonal.css" />
+</head>
+<body>
+    <div class="container">
+        <h2><b>A bit about me</b></h2>
+        <figure id="pics1">
+            <img src="img/family/family.png" alt="family picture">
+            <figcaption>My father's family</figcaption>
+        </figure>
+        <p>
+            Actually I have a very big family, I have four siblings. Two brothers and two sisters, I'm the second older.
+            I came to Canada with my father.
+        </p>
+        <figure id="pics2">
+            <img src="img/family/family4.png" alt="family picture">
+            <figcaption>My best friend</figcaption>
+        </figure>
+        <p>
+            My mother stayed in Brazil, I used to live with her before came to Canada. I had two cats and a dog. All of them had to stay too.
+        </p>
+        <figure id="pics1">
+            <img src="img/family/family5.png" alt="family picture">
+            <figcaption>My mother's family</figcaption>
+        </figure>
+        <p>
+            My siblings and I are very close, we normally hang out and do stuff together.
+        </p>
+        <p>
+            All my family loves movies and TV series, we always watch movies together, I love travel and meet different cultures, that's one of the reasons why I liked Montreal a lot.
+        </p>
+        <p>
+            I learned saxophone when I was 12, I love all kind of music, but mainly soundtracks. Any soundtrack! Movies, games, series.. there is no limits.
+        </p>
+        <p>
+            Before studying Programming, I graduated in Eletronic, as a technician. I also did four years of Pharmacy in UFF-Universidade Federal Fluminense, which is an university in Brazil.
+        </p>
+        <p>
+            I'm from <a href="https://www.google.com/maps/place/Niter%C3%B3i+-+State+of+Rio+de+Janeiro,+Brazil/data=!4m2!3m1!1s0x9980d11713a241:0x4ab9cc046614a9d5?sa=X&ved=2ahUKEwi77Pmw7LPmAhUQQ60KHWEQAQ0Q8gEwAHoECAwQAQ" target="_self"> Niteroi, Rio de Janeiro. </a>
+            I lived there 21 years of my life. It is a very beautiful place, however is dangerous. I've chosen some pictures from internet to show you my city.
+        </p>
+        <nav>
+            <div class="slideshow-container">
+                <!-- Full-width images with number and caption text -->
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 4</div>
+                    <img src="img/country/Visual of niteroi city Wallpapers 5.jpg" style="width:100%">
+                    <div class="text">Photo via https://www.bestfunforall.com/freepik1/imgs/Visual%20of%20niteroi%20city%20Wallpapers%205.jpg </div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 4</div>
+                    <img src="img/country/2016-893117701-201603022034510878.jpg_20160302.jpg" style="width:100%">
+                    <div class="text">Photo by Guilherme Leporace / Agência O Globo</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 4</div>
+                    <img src="img/country/Niteroi-rio1.jpg" style="width:100%">
+                    <div class="text">Photo by Marinelson Almeida via Flickr</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">4 / 4</div>
+                    <img src="img/country/Visual of niteroi city Wallpapers 1.jpg" style="width:100%">
+                    <div class="text">Photo via https://www.bestfunforall.com/freepik1/imgs/Visual%20of%20niteroi%20city%20Wallpapers%205.jpg</div>
+                </div>
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+            <!-- The dots/circles -->
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+            </div>
+
+
+        </nav>
+
+    </div>
+
+
+
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script>
+</body>
+</html>

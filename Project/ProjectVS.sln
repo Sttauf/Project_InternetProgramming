@@ -1,0 +1,47 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.779
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{AF5FC229-8612-4FCF-894C-F868DF45EAD3}"
+	ProjectSection(SolutionItems) = preProject
+		cssCv.css = cssCv.css
+		cssPersonal.css = cssPersonal.css
+		cssProject.css = cssProject.css
+		cv.html = cv.html
+		personal.html = personal.html
+		project.html = project.html
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "img", "img", "{40B26031-B2CF-4317-8ACD-6B0FFA19FCE0}"
+	ProjectSection(SolutionItems) = preProject
+		img\2016-893117701-201603022034510878.jpg_20160302.jpg = img\2016-893117701-201603022034510878.jpg_20160302.jpg
+		img\d29b0ddae7e419d482f4f32db1c3d292.jpg = img\d29b0ddae7e419d482f4f32db1c3d292.jpg
+		img\family.png = img\family.png
+		img\family2.png = img\family2.png
+		img\family3.png = img\family3.png
+		img\family4.png = img\family4.png
+		img\family5.png = img\family5.png
+		img\family6.png = img\family6.png
+		img\hobby1.png = img\hobby1.png
+		img\hobby2.png = img\hobby2.png
+		img\hobby3.png = img\hobby3.png
+		img\hobby4.png = img\hobby4.png
+		img\hobby5.png = img\hobby5.png
+		img\Niteroi-rio1.jpg = img\Niteroi-rio1.jpg
+		img\SARAH.png = img\SARAH.png
+		img\Visual of niteroi city Wallpapers 1.jpg = img\Visual of niteroi city Wallpapers 1.jpg
+		img\Visual of niteroi city Wallpapers 5.jpg = img\Visual of niteroi city Wallpapers 5.jpg
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{40B26031-B2CF-4317-8ACD-6B0FFA19FCE0} = {AF5FC229-8612-4FCF-894C-F868DF45EAD3}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F7120328-E986-4B09-8821-C0261FA50351}
+	EndGlobalSection
+EndGlobal
